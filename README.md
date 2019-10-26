@@ -35,3 +35,72 @@ function App() {
 const rootElement = document.getElementById("root");
 render(<App />, rootElement);
 ```
+
+### 1.2 useInput
+
+###### Usage
+
+```jsx
+import React from "react";
+import { useInput } from "@nc-react-hooks/use-input";
+
+const App = () => {
+  const validator = value => !value.includes("@");
+  const name = useInput("Mr. ", validator);
+  return (
+    <>
+      <input placeholder="Name" {...name.props} />
+    </>
+  );
+};
+```
+
+```jsx
+import React from "react";
+import { useInput } from "@nc-react-hooks/use-input";
+
+const App = () => {
+  const maxLen = (value: string | string[]) => value.length <= 10;
+  const name = useInput("Mr.", maxLen);
+  return (
+    <>
+      <input placeholder="Name" {...name} />
+    </>
+  );
+};
+```
+
+### 1.3 useTabs
+
+```jsx
+import React from "react";
+import { useTabs } from "@nc-react-hooks/use-tabs";
+
+interface Icontent {
+  tab: string;
+  content: string;
+}
+
+const content: Icontent[] = [
+  {
+    tab: "Section 1",
+    content: "I'm the content of the Section 1"
+  },
+  {
+    tab: "Section 2",
+    content: "I'm the content of the Section 2"
+  }
+];
+
+const App = () => {
+  const { currentItem, changeIetm } = useTabs(0, content);
+  return (
+    <>
+      {content.map((section, index) => (
+        <button onClick={() => changeIetm(index)}>{section.tab}</button>
+      ))}
+      <div>{currentItem.content}</div>
+    </>
+  );
+};
+```

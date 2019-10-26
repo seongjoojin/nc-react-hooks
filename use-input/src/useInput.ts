@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 export const useInput = (
-  initialValue: string | number | string[] | undefined,
-  validator?: (value: string | number | string[]) => boolean
+  initialValue: string | string[] | undefined,
+  validator?: (value: string | string[]) => boolean
 ) => {
   const [value, setValue] = useState(initialValue);
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
