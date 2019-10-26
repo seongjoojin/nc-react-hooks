@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 export const useInput = (
   initialValue: string | number | string[] | undefined,
   validator?: (value: string | number | string[]) => boolean
