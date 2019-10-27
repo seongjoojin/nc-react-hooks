@@ -146,3 +146,22 @@ function App() {
 | Argument | Type   | Description                                | Required |
 | -------- | ------ | ------------------------------------------ | -------- |
 | title    | string | The title you want to use on your document | yes      |
+
+### 2.2 useClick
+
+##### Usage
+
+```jsx
+import React from "react";
+import { useClick } from "@nc-react-hooks/use-click";
+
+function App() {
+  const sayHello = () => console.log("say hello");
+  const title = useClick(sayHello);
+  return (
+    <>
+      <h1 ref={title}>Hi</h1>
+    </>
+  );
+}
+```
