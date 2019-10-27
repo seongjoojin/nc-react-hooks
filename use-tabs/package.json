@@ -1,7 +1,7 @@
 {
   "name": "use-tabs",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "author": "Evanjin",
   "license": "MIT",
   "scripts": {
@@ -14,5 +14,6 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "typescript": "^3.6.4"
-  }
+  },
+  "typings": "./lib/index.d.ts"
 }

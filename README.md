@@ -104,3 +104,11 @@ const App = () => {
   );
 };
 ```
+
+## useEffect
+
+### 2.0 Introduction to useEffect
+
+- useEffect는 componentWillUnmount와 componentDidMount, componentWillUpdate와 비슷함
+- useEffect는 2개의 인자를 받는데 첫번째는 function의 effect, 두번째는 deps이며 deps의 값이 변한다면 effect가 실행되도록 합니다. deps가 설정되지 않으면 모든 값 변화에 반응함
+- 어떤 경우에도 실행되고 싶지 않게 하려면 deps에 빈 디펜던시를 전해주면 됨.
