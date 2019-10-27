@@ -2,7 +2,7 @@
   "name": "use-tabs",
   "version": "0.0.1",
   "main": "./lib/index.js",
-  "author": "Evanjin",
+  "author": "Evanjin <evanjin8@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "tsc"

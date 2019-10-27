@@ -1,7 +1,5 @@
 {
-  "name": "use-input",
   "version": "0.0.1",
-  "description": "Input hook for React",
   "main": "./lib/index.js",
   "author": "Evanjin <evanjin8@gmail.com>",
   "license": "MIT",
