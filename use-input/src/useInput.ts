@@ -10,7 +10,7 @@ export const useInput = (
       target: { value }
     } = event;
     let willUpdate = true;
-    if (typeof validator === "function") {
+    if (validator) {
       willUpdate = validator(value);
     }
     if (willUpdate) {
