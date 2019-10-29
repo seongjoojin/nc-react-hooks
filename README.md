@@ -18,7 +18,7 @@ https://codesandbox.io
 import React, { useState } from "react";
 import { render } from "react-dom";
 
-function App() {
+const App = () => {
   const [item, setItem] = useState(1);
   const incrementItem = () => setItem(item + 1);
   const decrementItem = () => setItem(item - 1);
@@ -30,17 +30,16 @@ function App() {
       <button onClick={decrementItem}>Decrement</button>
     </div>
   );
-}
+};
 
-const rootElement = document.getElementById("root");
-render(<App />, rootElement);
+export default App;
 ```
 
 ### 1.2 useInput
 
 ###### Usage
 
-```jsx
+```tsx
 import React from "react";
 import { useInput } from "@nc-react-hooks/use-input";
 
@@ -53,9 +52,11 @@ const App = () => {
     </>
   );
 };
+
+export default App;
 ```
 
-```jsx
+```tsx
 import React from "react";
 import { useInput } from "@nc-react-hooks/use-input";
 
@@ -68,13 +69,15 @@ const App = () => {
     </>
   );
 };
+
+export default App;
 ```
 
 ### 1.3 useTabs
 
 ###### Usage
 
-```jsx
+```tsx
 import React from "react";
 import { useTabs } from "@nc-react-hooks/use-tabs";
 
@@ -105,6 +108,8 @@ const App = () => {
     </>
   );
 };
+
+export default App;
 ```
 
 ## useEffect
@@ -131,14 +136,16 @@ React Hook to update your document's title.
 
 ##### Usage
 
-```jsx
+```tsx
 import React from "react";
 import { useTitle } from "@nc-react-hooks/use-title";
 
-function App() {
+const App = () => {
   useTitle("Welcome");
   return <h1>Welcome</h1>;
-}
+};
+
+export default App;
 ```
 
 ##### Arguments
@@ -151,11 +158,11 @@ function App() {
 
 ##### Usage
 
-```jsx
+```tsx
 import React from "react";
 import { useClick } from "@nc-react-hooks/use-click";
 
-function App() {
+const App = () => {
   const sayHello = () => console.log("say hello");
   const title = useClick(sayHello);
   return (
@@ -163,14 +170,16 @@ function App() {
       <h1 ref={title}>Hi</h1>
     </>
   );
-}
+};
+
+export default App;
 ```
 
 ### 2.3.1 useConfirm
 
 ##### Usage
 
-```jsx
+```tsx
 import React from "react";
 import { useConfirm } from "@nc-react-hooks/use-confirm";
 
@@ -184,4 +193,27 @@ function App() {
   const confirmDelete = useConfirm("Are you sure?", deleteAction, abort);
   return <button onClick={confirmDelete}>Delete</button>;
 }
+
+export default App;
+```
+
+### 2.3.2 usePreventLeave
+
+##### Usage
+
+```tsx
+import React from "react";
+import { usePreventLeave } from "@nc-react-hooks/use-prevent-leave";
+
+const App = () => {
+  const { enablePrevent, disablePrevent } = usePreventLeave();
+  return (
+    <div>
+      <button onClick={enablePrevent}>Protect</button>
+      <button onClick={disablePrevent}>Unprotect</button>
+    </div>
+  );
+};
+
+export default App;
 ```

@@ -1,10 +1,10 @@
 export const useConfirm = (
   message: string,
-  callback: () => void,
-  rejection: () => void
+  onConfirm: () => void,
+  onCancel: () => void
 ) => {
   const confirmAction = () => {
-    window.confirm(message) ? callback() : rejection();
+    window.confirm(message) ? onConfirm() : onCancel();
   };
   return confirmAction;
 };
