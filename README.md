@@ -101,7 +101,7 @@ const App = () => {
       {content.map((section, index) => (
         <button onClick={() => changeIetm(index)}>{section.tab}</button>
       ))}
-      <div>{currentItem.content}</div>
+      <div key="index">{currentItem.content}</div>
     </>
   );
 };
@@ -163,5 +163,25 @@ function App() {
       <h1 ref={title}>Hi</h1>
     </>
   );
+}
+```
+
+### 2.3.1 useConfirm
+
+##### Usage
+
+```jsx
+import React from "react";
+import { useConfirm } from "@nc-react-hooks/use-confirm";
+
+function App() {
+  const deleteAction = () => {
+    console.log("Deleting");
+  };
+  const abort = () => {
+    console.log("Aborted");
+  };
+  const confirmDelete = useConfirm("Are you sure?", deleteAction, abort);
+  return <button onClick={confirmDelete}>Delete</button>;
 }
 ```

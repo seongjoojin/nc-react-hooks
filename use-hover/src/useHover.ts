@@ -5,12 +5,11 @@ export const useHover = (
 ) => {
   const element = useRef<HTMLHeadingElement>(null);
   useEffect(() => {
-    if (element.current)
-      element.current.addEventListener("mouseenter", onHover);
+    const current = element.current;
+    if (current) current.addEventListener("mouseenter", onHover);
     return () => {
-      if (element.current)
-        element.current.removeEventListener("mouseenter", onHover);
+      if (current) current.removeEventListener("mouseenter", onHover);
     };
-  }, []);
+  }, [onHover]);
   return element;
 };
