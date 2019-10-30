@@ -217,3 +217,20 @@ const App = () => {
 
 export default App;
 ```
+
+### 2.4 useBeforeLeave
+
+##### Usage
+
+```tsx
+import React from "react";
+import { useBeforeLeave } from "@nc-react-hooks/use-before-leave";
+
+const App = () => {
+  const begForLife = () => console.log("pls dont leave");
+  useBeforeLeave(begForLife);
+  return <div>hello</div>;
+};
+
+export default App;
+```
