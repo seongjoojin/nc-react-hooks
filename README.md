@@ -253,4 +253,29 @@ const App () => {
     </div>
   );
 }
+
+export default App;
+```
+
+### 2.5.2 useNetwork
+
+##### Usage
+
+```tsx
+import React from "react";
+import { useNetwork } from "@nc-react-hooks/use-network";
+
+const App () => {
+  const hadleNetworkChange = (online: boolean) => {
+    console.log(online ? "We just went online" : "We are offline");
+  };
+  const online = useNetwork(hadleNetworkChange);
+  return (
+    <div>
+      <h1>{online ? "Online" : "Offline"}</h1>
+    </div>
+  );
+}
+
+export default App;
 ```

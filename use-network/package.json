@@ -1,0 +1,19 @@
+{
+  "name": "use-network",
+  "version": "0.0.1",
+  "main": "./lib/index.js",
+  "author": "Evanjin <evanjin8@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/node": "^12.11.7",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.3",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "typescript": "^3.6.4"
+  },
+  "typings": "./lib/index.d.ts"
+}
