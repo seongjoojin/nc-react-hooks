@@ -134,7 +134,7 @@ React Hook to update your document's title.
 
 `npm i @nc-react-hooks/use-title`
 
-##### Usage
+###### Usage
 
 ```tsx
 import React from "react";
@@ -156,7 +156,7 @@ export default App;
 
 ### 2.2 useClick
 
-##### Usage
+###### Usage
 
 ```tsx
 import React from "react";
@@ -177,7 +177,7 @@ export default App;
 
 ### 2.3.1 useConfirm
 
-##### Usage
+###### Usage
 
 ```tsx
 import React from "react";
@@ -199,7 +199,7 @@ export default App;
 
 ### 2.3.2 usePreventLeave
 
-##### Usage
+###### Usage
 
 ```tsx
 import React from "react";
@@ -220,7 +220,7 @@ export default App;
 
 ### 2.4 useBeforeLeave
 
-##### Usage
+###### Usage
 
 ```tsx
 import React from "react";
@@ -233,4 +233,24 @@ const App = () => {
 };
 
 export default App;
+```
+
+### 2.5.1 useFadeIn
+
+###### Usage
+
+```tsx
+import React from "react";
+import { useFadeIn } from "@nc-react-hooks/use-fade-in";
+
+const App () => {
+  const fadeInH1 = useFadeIn(1, 2);
+  const fadeInP = useFadeIn(5, 1, "cubic-bezier(0.4, 0, 1, 1)");
+  return (
+    <div>
+      <h1 {...fadeInH1}>hello</h1>
+      <p {...fadeInP}>Lorem ipsum dolor</p>
+    </div>
+  );
+}
 ```
