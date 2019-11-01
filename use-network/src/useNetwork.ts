@@ -8,7 +8,7 @@ export const useNetwork = (onChange?: (online: boolean) => void) => {
   useEffect(() => {
     window.addEventListener("online", hadleChange);
     window.addEventListener("offline", hadleChange);
-    () => {
+    return () => {
       window.removeEventListener("online", hadleChange);
       window.removeEventListener("offline", hadleChange);
     };
