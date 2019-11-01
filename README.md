@@ -301,3 +301,31 @@ const App = () => {
 
 export default App;
 ```
+
+### 2.6.2 useFullscreen
+
+##### Usage
+
+```tsx
+import React from "react";
+import { useFullScreen } from "@nc-react-hooks/use-full-screen";
+
+const App = () => {
+  const onFullScreen = (isFull: boolean) => {
+    console.log(isFull ? "We are full" : "We are small");
+  };
+  const { element, triggerFullscreen, exitFullscreen } = useFullScreen(
+    onFullScreen
+  );
+  return (
+    <div style={{ height: "1000vh" }}>
+      <div ref={element}>
+        <img src="https://i.imgur.com/FPwTJGw.jpg" alt="test photo" />
+        <button onClick={exitFullscreen}>Exit fullscreen</button>
+      </div>
+      <button onClick={triggerFullscreen}>Make fullscreen</button>
+    </div>
+  );
+};
+export default App;
+```
