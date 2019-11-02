@@ -1,4 +1,4 @@
-export const useConfirm = (
+export const useConfirmation = (
   message: string,
   onConfirm: () => void,
   onCancel: () => void

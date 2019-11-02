@@ -1,5 +1,5 @@
 {
-  "name": "use-confirm",
+  "name": "@nc-react-hooks/use-confirmation",
   "version": "0.0.1",
   "main": "./lib/index.js",
   "author": "Evanjin <evanjin8@gmail.com>",
@@ -7,7 +7,17 @@
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {
+  "keywords": [
+    "react",
+    "hooks",
+    "confirm"
+  ],
+  "description": "Prompt a confirmation before executing a function.",
+  "bugs": {
+    "url": "https://github.com/seongjoojin/nc-react-hooks/issues"
+  },
+  "homepage": "https://github.com/seongjoojin/nc-react-hooks#readme",
+  "peerDependencies": {
     "@types/node": "^12.11.7",
     "typescript": "^3.6.4"
   },

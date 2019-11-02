@@ -1,5 +1,5 @@
 {
-  "name": "use-axios",
+  "name": "@nc-react-hooks/use-axios",
   "version": "0.0.1",
   "main": "./lib/index.js",
   "author": "Evanjin <evanjin8@gmail.com>",

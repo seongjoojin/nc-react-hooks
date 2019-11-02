@@ -1,5 +1,5 @@
 {
-  "name": "use-input",
+  "name": "@nc-react-hooks/use-input",
   "version": "0.0.1",
   "description": "Input hook for React",
   "main": "./lib/index.js",
@@ -8,7 +8,16 @@
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {
+  "keywords": [
+    "react",
+    "hooks",
+    "input"
+  ],
+  "bugs": {
+    "url": "https://github.com/seongjoojin/nc-react-hooks/issues"
+  },
+  "homepage": "https://github.com/seongjoojin/nc-react-hooks#readme",
+  "peerDependencies": {
     "@types/node": "^12.11.7",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.3",

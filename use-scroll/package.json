@@ -1,5 +1,5 @@
 {
-  "name": "use-scroll",
+  "name": "@nc-react-hooks/use-scroll",
   "version": "0.0.1",
   "main": "./lib/index.js",
   "author": "Evanjin <evanjin8@gmail.com>",
@@ -7,7 +7,17 @@
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {
+  "description": "Get X/Y coordinates of current position of the scroll.",
+  "keywords": [
+    "react",
+    "hooks",
+    "scroll"
+  ],
+  "bugs": {
+    "url": "https://github.com/seongjoojin/nc-react-hooks/issues"
+  },
+  "homepage": "https://github.com/seongjoojin/nc-react-hooks#readme",
+  "peerDependencies": {
     "@types/node": "^12.11.7",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.3",

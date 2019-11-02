@@ -1,5 +1,5 @@
 {
-  "name": "use-full-screen",
+  "name": "@nc-react-hooks/use-full-screen",
   "version": "0.0.1",
   "main": "./lib/index.js",
   "author": "Evanjin <evanjin8@gmail.com>",
@@ -7,7 +7,17 @@
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {
+  "keywords": [
+    "react",
+    "hooks",
+    "fullScreen"
+  ],
+  "description": "Make any element go Fullscreen",
+  "bugs": {
+    "url": "https://github.com/seongjoojin/nc-react-hooks/issues"
+  },
+  "homepage": "https://github.com/seongjoojin/nc-react-hooks#readme",
+  "peerDependencies": {
     "@types/node": "^12.11.7",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.3",

@@ -1,5 +1,5 @@
 {
-  "name": "use-before-leave",
+  "name": "@nc-react-hooks/use-before-leave",
   "version": "0.0.1",
   "main": "./lib/index.js",
   "author": "Evanjin <evanjin8@gmail.com>",
@@ -7,7 +7,17 @@
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {
+  "description": "Execute a function when the mouse leaves the document.",
+  "keywords": [
+    "react",
+    "hooks",
+    "beforeLeave"
+  ],
+  "bugs": {
+    "url": "https://github.com/seongjoojin/nc-react-hooks/issues"
+  },
+  "homepage": "https://github.com/seongjoojin/nc-react-hooks#readme",
+  "peerDependencies": {
     "@types/node": "^12.11.7",
     "@types/react": "^16.9.11",
     "@types/react-dom": "^16.9.3",

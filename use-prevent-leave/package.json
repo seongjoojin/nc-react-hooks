@@ -1,5 +1,5 @@
 {
-  "name": "use-prevent-leave",
+  "name": "@nc-react-hooks/use-prevent-leave",
   "version": "0.0.1",
   "main": "./lib/index.js",
   "author": "Evanjin <evanjin8@gmail.com>",
@@ -7,7 +7,17 @@
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {
+  "description": "Prompt the user for confirmation before leaving the page.",
+  "keywords": [
+    "react",
+    "hooks",
+    "preventLeave"
+  ],
+  "bugs": {
+    "url": "https://github.com/seongjoojin/nc-react-hooks/issues"
+  },
+  "homepage": "https://github.com/seongjoojin/nc-react-hooks#readme",
+  "peerDependencies": {
     "@types/node": "^12.11.7",
     "typescript": "^3.6.4"
   },

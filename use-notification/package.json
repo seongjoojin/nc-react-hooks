@@ -1,5 +1,5 @@
 {
-  "name": "use-notification",
+  "name": "@nc-react-hooks/use-notification",
   "version": "0.0.1",
   "main": "./lib/index.js",
   "author": "Evanjin <evanjin8@gmail.com>",
@@ -7,9 +7,20 @@
   "scripts": {
     "build": "tsc"
   },
-  "dependencies": {
-    "@types/node": "^12.11.7",
+  "keywords": [
+    "react",
+    "hooks",
+    "notification"
+  ],
+  "bugs": {
+    "url": "https://github.com/seongjoojin/nc-react-hooks/issues"
+  },
+  "homepage": "https://github.com/seongjoojin/nc-react-hooks#readme",
+  "peerDependencies": {
     "typescript": "^3.6.4"
   },
-  "typings": "./lib/index.d.ts"
+  "typings": "./lib/index.d.ts",
+  "dependencies": {
+    "@types/node": "^12.12.5"
+  }
 }
