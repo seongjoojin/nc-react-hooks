@@ -327,5 +327,29 @@ const App = () => {
     </div>
   );
 };
+
+export default App;
+```
+
+### 2.7 useNotification
+
+https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API
+
+##### Usage
+
+```tsx
+import React from "react";
+import { useNotification } from "@nc-react-hooks/use-notification";
+
+const App = () => {
+  const triggerNotification = useNotification("hi", { body: "hello" });
+  return (
+    <div>
+      <h1>hello</h1>
+      <button onClick={triggerNotification}>noti!</button>
+    </div>
+  );
+};
+
 export default App;
 ```
