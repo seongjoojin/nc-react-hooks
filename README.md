@@ -377,3 +377,9 @@ const App = () => {
 
 export default App;
 ```
+
+### 2.10 Publishing to NPM
+
+`npm login`
+
+`npm publish --access public`
