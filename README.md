@@ -353,3 +353,27 @@ const App = () => {
 
 export default App;
 ```
+
+### 2.8 useAxios
+
+##### Usage
+
+```tsx
+import React from "react";
+import { useAxios } from "@nc-react-hooks/use-axios";
+
+const App = () => {
+  const { loading, data, error, refetch } = useAxios({
+    url: "https://yts.lt/api/v2/list_movies.json"
+  });
+  return (
+    <div>
+      <h1>{data && data.status}</h1>
+      <h2>{loading && "Loading"}</h2>
+      <button onClick={refetch}>Refetch</button>
+    </div>
+  );
+};
+
+export default App;
+```
